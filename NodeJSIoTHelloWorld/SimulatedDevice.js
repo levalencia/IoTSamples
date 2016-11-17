@@ -1,7 +1,7 @@
 'use strict';
 var clientFromConnectionString = require('azure-iot-device-amqp').clientFromConnectionString;
 var Message = require('azure-iot-device').Message;
-var connectionString = 'HostName={youriothostname};DeviceId=myFirstNodeDevice;SharedAccessKey={yourdevicekey}';
+var connectionString = 'HostName=iothubdemo1.azure-devices.net;DeviceId=thisisanewdevice3;SharedAccessKeyName=iothubowner;SharedAccessKey=rBoaUgY3CBgP3FLsI0sGI8gst9GWmZGyKHW+MGmyy+c=';
 var client = clientFromConnectionString(connectionString);
 
 function printResultFor(op) {
@@ -23,7 +23,7 @@ var connectCallback = function (err) {
          var data = JSON.stringify({ deviceId: 'myFirstNodeDevice', windSpeed: windSpeed });
          var message = new Message(data);
          console.log("Sending message: " + message.getData());
-         //client.sendEvent(message, printResultFor('send'));
+         client.sendEvent(message, printResultFor('send'));
      }, 1000);
    }
  };

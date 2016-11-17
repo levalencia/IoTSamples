@@ -12,6 +12,6 @@
     "azure-event-hubs": "0.0.4",
     "azure-iot-device": "^1.0.17",
     "azure-iot-device-amqp": "^1.0.17",
-    "azure-iothub": "^1.0.19"
+    "azure-iothub": "^1.1.0"
   }
 }
