@@ -23,7 +23,7 @@ var connectCallback = function (err) {
          var data = JSON.stringify({ deviceId: 'myFirstNodeDevice', windSpeed: windSpeed });
          var message = new Message(data);
          console.log("Sending message: " + message.getData());
-         client.sendEvent(message, printResultFor('send'));
+         //client.sendEvent(message, printResultFor('send'));
      }, 1000);
    }
  };
