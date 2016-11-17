@@ -1,0 +1,17 @@
+{
+  "name": "nodejsiothelloworld",
+  "version": "1.0.0",
+  "description": "Hello World for Raspbian from Raspberry PI 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-event-hubs": "0.0.4",
+    "azure-iot-device": "^1.0.17",
+    "azure-iot-device-amqp": "^1.0.17",
+    "azure-iothub": "^1.0.19"
+  }
+}
